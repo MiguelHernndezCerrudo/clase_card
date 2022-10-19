@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zapas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .card .img-caja img{
+            margin-top: 30px;
+            width: 220px;
+            transform: rotate(-20deg);
+            position: absolute;
+            top: 0;
+            left: 40px;
+            z-index: 10;
+        }
+        .body{
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            align-content: center;
+        }
+        
+        
+        .card{
+            position: relative;
+            margin-left: 40%;
+            margin-top: 15%;
+            height: 400px;
+            width: 320px;
+            background-color: rgb(17, 17, 17);
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif
+            
+        }
+        .card .img-caja{
+            height: 200px;
+            position: relative;
+        }
+        .card:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            height: 100%;
+            width: 100%;
+            background-color: aqua;
+            clip-path: circle(250px at 80% -20%);
+
+        }
+        .card:before{
+            content: 'NIKE';
+            position: absolute;
+            top: 100px;
+            left: -15px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 12rem;
+            color: rgba(8, 243, 165, 0.1);
+            z-index: 9;
+        }
+        .card .tamaños{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card .tamaños span{
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }
+        .card .colores{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card .colores span{
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            border: solid;
+            color: black;
+            border-radius: 50%;
+            margin: 8px 8px;
+            font-size: 14px;
+        }
+        .color-green{
+            background-color: greenyellow;
+        }
+        .color-blue{
+            background-color: blue;
+        }
+        .color-red{
+            background-color: red;
+        }
+        button{
+            background-color: orangered;
+            color: white;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <section class="img-caja">
+            <img src="./imagenes/shoes.png" alt="">
+        </section>
+        <section class="content-caja">
+            <h2>Nike Shoes</h2>
+            <div class="tamaños">
+                <h3>Size:</h3>
+                <span>42</span>
+                <span>43</span>
+                <span>44</span>
+                <span>45</span>
+                <span>46</span>
+            </div>
+            <div class="colores">
+                <h3>Color:</h3>
+                <span class="color-green"></span>
+                <span class="color-blue"></span>
+                <span class="color-red"></span>
+            </div>
+            <button>Just Buy It</button>
+        </section>
+
+    </article>
+</body>
+</html>
