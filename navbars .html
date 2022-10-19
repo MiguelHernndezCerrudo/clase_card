@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        color: white;
+        height: 5%;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    h1, nav, div, header {
+        border: 2px solid red;
+    }
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        min-width: 100px;
+        display: inline-block;
+
+    }
+    nav:hover{
+        color: aqua;
+        border-bottom: 3px solid aqua;
+    }
+</style>
+<body>
+    <header>
+        <h1>Titulo pelicula</h1>
+        <nav>
+            <div><a href="Home"></a>Home</div>
+            
+            <div><a href="Aventura"></a>Aventura</div>
+            
+            <div><a href="Terror"></a>Terror</div>
+            
+            <div><a href=""></a>Infantil</div>
+            
+            <div><a href=""></a>Super heroes</div>
+            
+        </nav>
+    </header>
+    <!-- lo de abajo se hace con emmet abrebiation nav>div*5 -->
+    <nav>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </nav>
+</body>
+</html>

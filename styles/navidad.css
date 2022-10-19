@@ -1,0 +1,24 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+.card {
+    height: 350px;
+    width: 700px;
+    background-color: whitesmoke;
+}
+.imagen1 {
+    background: red url('../imagenes/arbol.jpg');
+    background-size: cover;
+    width: 40%;
+}
+
+.div {
+    display: flex;
+    flex-direction: row;
+}
+.caja1{
+    background-color: aqua;
+}
+.caja2{
+    background-color: chartreuse;
+}

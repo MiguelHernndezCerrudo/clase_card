@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+:root{
+    --backgroundprincipal:black;
+    --colortexto: white ;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.card{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    height: 500px;
+    width: 350px;
+    box-shadow: 0px 6px 12px 0px red;
+}
+.portada{
+    background: url('../imagenes/brujo.jpg');
+    background-size: cover;
+    height: 60%;
+}
+.portada h2 {
+    text-align: center;
+    padding-top: 60%;
+    font-family: 'Alkalami';
+    text-shadow: 95deg 5px 2px rgb(150, 150, 150) 1;
+}
+.portada .Top {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    height: 32px;
+    width: 28px;
+    background-color: red;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.portada::after{
+    content: 'Netflix';
+    position: absolute;
+    z-index: 5;
+    top: 25px;
+    left: 15px;
+    color: rgb(233, 10, 10);
+    font-weight: bold;
+}
+.botones {
+    text-align: center;
+}
+.boton {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 20px;
+    background-color: red;
+    border: 0ch;
+    
+}
+.boton:hover{
+    background-color: white;
+    color: red;
+    transform: scale(1.1, 1.1);
+    transition: transform 1s ease
+}
