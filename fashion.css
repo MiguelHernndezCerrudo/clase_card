@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../clase_card/proyecto/img2/background.png');
+}
+#page{
+    height: 100vh;
+}
