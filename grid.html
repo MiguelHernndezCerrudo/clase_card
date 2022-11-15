@@ -6,18 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica grids</title>
     <style>
-        
+        header{
+            grid-area: head;
+            border: solid 1px;
+        }
+        .ph1{
+            grid-area: p1;
+            border: solid 1px;
+        }
+        .ph2{
+            grid-area: p2;
+            border: solid 1px;
+        }
+        .ph3{
+            grid-area: p3;
+            border: solid 1px;
+        }
+        .ph4{
+            grid-area: p4;
+            border: solid 1px;
+        }
+        main{
+            grid-area: m1;
+            border: solid 1px;
+        }
+        footer{
+            grid-area: fu;
+            border: solid 1px;
+        }
+        #grid_page{
+            display: grid;
+            border: solid 1px;
+            grid-template-areas: 
+            'head head head head'
+            'p1 p2 p3 p4'
+            'm1 m1 m1 m1'
+            'fu fu fu fu'
+            ;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 20vh 15vh 50vh 15vh;
+            gap: 1rem;
+
+            
+        }
+        @media (max-width:600px){
+            .p3, .p4{
+                display: none;
+            }
+            #grid_page{
+                display: grid;
+                border: solid 1px;
+                grid-template-areas:
+                'head head'
+                'p1 p2'
+                'm1 m1'
+                'fu fu'
+                ;
+                grid-template-columns: auto auto;
+                grid-template-rows: 20vh 15vh 50vh 15vh;
+                gap: 1rem;
+            }
+            .p1,.p2{
+                background-color: blue;
+            }
+
+
+        }
     </style>
 </head>
 <body>
-    <header></header>
-    <nav></nav>
-    <div class="ph1"></div>
-    <div class="phlado"></div>
-    <div class="ph2"></div>
-    <div class="ph3"></div>
-    <div class="ph4"></div>
-    <footer></footer>
+    <div id="grid_page">
+        <header></header>
+        <div class="ph1"></div>
+        <div class="ph2"></div>
+        <div class="ph3"></div>
+        <div class="ph4"></div>
+        <main></main>
+        <footer></footer>
+    </div>
+    
     
 </body>
 </html>
