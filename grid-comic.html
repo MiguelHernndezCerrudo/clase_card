@@ -5,17 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>comic</title>
+    <style>
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .v1{
+            grid-area: a1;
+        }
+        .v2{
+            grid-area: a2;
+        }
+        .v3{
+            grid-area: a3;
+        }
+        .v4{
+            grid-area: a4;
+        }
+        .v5{
+            grid-area: a5;
+        }
+        .v6{
+            grid-area: a6;
+        }
+        .v7{
+            grid-area: a7;
+        }
+        .v8{
+            grid-area: a8;
+        }
+        .v9{
+            grid-area: a9;
+            
+        }
+        #page-co{
+            display: grid;
+            
+            grid-template-areas: 
+            'a1 a4 a4 a4'
+            'a2 a4 a4 a4'
+            'a3 a4 a4 a4'
+            'a5 a5 a5 a6'
+            'a7 a7 a8 a9'
+            ;
+            grid-template-columns: auto auto auto;
+            grid-row: 15vh 15vh 15vh 20vh auto;
+            gap: 3rem;
+
+        }
+
+        #grid-co, img{
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+
+        img{
+            border: solid 2px;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="v1"><img src="./grid-img/deadpool_1.png" alt=""></div>
-    <div class="v2"><img src="./grid-img/deadpool_2.png" alt=""></div>
-    <div class="v3"><img src="./grid-img/deadpool_3.png" alt=""></div>
-    <div class="v4"><img src="./grid-img/deadpool_4.png" alt=""></div>
-    <div class="v5"><img src="./grid-img/deadpool_5.png" alt=""></div>
-    <div class="v6"><img src="./grid-img/deadpool_6.png" alt=""></div>
-    <div class="v7"><img src="./grid-img/deadpool_7.png" alt=""></div>
-    <div class="v8"><img src="./grid-img/deadpool_8.png" alt=""></div>
-    <div class="v9"><img src="./grid-img/deadpool_9.png" alt=""></div>
+    <div id="page-co">
+        <div id="grid-co" class="v1"><img src="./grid-img/deadpool_1.png" alt=""></div>
+        <div id="grid-co" class="v2"><img src="./grid-img/deadpool_2.png" alt=""></div>
+        <div id="grid-co" class="v3"><img src="./grid-img/deadpool_3.png" alt=""></div>
+        <div id="grid-co" class="v4"><img src="./grid-img/deadpool_4.png" alt=""></div>
+        <div id="grid-co" class="v5"><img src="./grid-img/deadpool_5.png" alt=""></div>
+        <div id="grid-co" class="v6"><img src="./grid-img/deadpool_6.png" alt=""></div>
+        <div id="grid-co" class="v7"><img src="./grid-img/deadpool_7.png" alt=""></div>
+        <div id="grid-co" class="v8"><img src="./grid-img/deadpool_8.png" alt=""></div>
+        <div id="grid-co" class="v9"><img src="./grid-img/deadpool_9.png" alt=""></div>
 
+    </div>
+    
 </body>
 </html>
