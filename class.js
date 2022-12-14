@@ -72,3 +72,22 @@ console.log(notaAlumno(5));
 console.log(notaAlumno(8));
 console.log(notaAlumno(10));
 console.log(notaAlumno(3));
+
+function descuento(precio){
+    //si el precio es mayor que 10 y menor que 50 resta 5
+    if (precio > 10) && (precio < 50){
+        return (precio - 5);
+    }
+    //si el precio es igual que 50 y menor que 100 resta 10
+    if (precio = 50) && (precio < 100){
+        return (precio - 10);
+    }
+    //si el precio es mayor o igual que 100 descuento del 10%
+    if (precio >= 100){
+        return (precio * 0.90);
+    }
+
+    else {
+        return (precio);
+    }
+}
