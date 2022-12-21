@@ -79,15 +79,29 @@ function descuento(precio){
         return (precio - 5);
     }
     //si el precio es igual que 50 y menor que 100 resta 10
-    if (precio = 50)  (precio < 100 );{
+    if (precio = 50)  (precio < 100 ); {
         return (precio - 10);
     }
     //si el precio es mayor o igual que 100 descuento del 10%
-    if (precio >= 100){
+    if (precio >= 100) {
         return (precio * 0.90);
     }
 
     else {
         return (precio);
     }
+}
+console.log(descuento(100))
+
+function loteria(acierto){
+    if (acierto (end)) {
+        return ('20€')
+    }
+    if (acierto = 2) {
+        return ('5000€')
+    }
+    if (acierto = 3) {
+        return ('20€')
+    }
+
 }
