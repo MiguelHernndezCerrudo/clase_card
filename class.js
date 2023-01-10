@@ -105,3 +105,54 @@ function loteria(acierto){
     }
 
 }
+
+
+function romanos(deci){
+    if (deci == 1) {
+        return ('I')
+    }
+    if (deci == 2) {
+        return ('II')
+    }
+    if (deci == 3) {
+        return ('III')
+    }
+    if (deci == 4) {
+        return ('IV')
+    }
+    if (deci == 5) {
+        return ('V')
+    }
+    if (deci == 6) {
+        return ('VI')
+    }
+    if (deci == 7) {
+        return ('VII')
+    }
+    if (deci == 8) {
+        return ('VIII')
+    }
+    if (deci == 9) {
+        return ('IX')
+    }
+    if (deci == 10) {
+        return ('X')
+    }
+
+}
+console.log(romanos(8))
+
+const bankClients[
+    {"name":"juan" , "money":1000};
+    {"name":"fred" , "money":3000};
+    {"name":"sara" , "money":2000};
+    {"name":"alef" , "money":4500};
+    {"name":"zack" , "money":4000};
+]
+
+function clientPremium(Client)[
+    let bestClient=Client
+
+
+]
+
