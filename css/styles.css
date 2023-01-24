@@ -1,0 +1,73 @@
+*{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(247, 245, 245);
+    padding: 5%;
+}
+button {
+    border: 1px solid #682396;
+    width: 100%;
+
+    padding: 10px;
+    background-color: #A435F0 ;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#product-price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#carrito {
+    width: 300px;
+    padding: 1rem;
+    border: 1px solid #A435F0;
+    margin-top: 1rem;
+}
+
+input[type='text'] {
+    padding: 8px 10px;
+    font: bold 1.1rem 'Arial', 'geneva';
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 2.5rem;
+}
+.precio-final{
+    font: bold 1.1rem 'Arial', 'geneva';
+    color:red;
+    margin:1rem 0 0 0;
+    text-align: right;
+
+}
+.card{
+    width: 200px;
+    height: 150px;
+    padding: 1rem;
+    padding: 5px;
+    border: 1px solid #682396;
+    border-radius: 5px;
+}
+
+#lista-cursos{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap:1rem
+}
+article{ 
+    margin-left: 1rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap:5px
+}
