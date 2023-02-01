@@ -29,7 +29,7 @@ let nombreCliente = "Juan";
 console.log("Nombre:", nombreCliente.toUpperCase());
 console.log("Nombr:", nombreCliente.indexOf("a"));
 
-// Funcion que compruebe si un email tiene @y despues de @ 1 '.'
+// Funcion que compruebe si un email tiene @ y despues de @ 1 '.'
 function checkEmail(email){
 //si este caso ocurre
     if (email.indexOf('@')===-1) return false;
@@ -73,6 +73,7 @@ console.log(notaAlumno(8));
 console.log(notaAlumno(10));
 console.log(notaAlumno(3));
 
+//la sigiente funcion sirve para calcular descuentos 
 function descuento(precio){
     //si el precio es mayor que 10 y menor que 50 resta 5
     if (precio > 10)  (precio < 50); {
@@ -106,7 +107,7 @@ function loteria(acierto){
 
 }
 
-
+// la siguiente funcion puede servir para hacer cambioos de valencias
 function romanos(deci){
     if (deci == 1) {
         return ('I')
