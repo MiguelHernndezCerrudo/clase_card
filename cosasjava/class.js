@@ -143,17 +143,3 @@ function romanos(deci){
 }
 console.log(romanos(8))
 
-const bankClients[
-    {"name":"juan" , "money":1000};
-    {"name":"fred" , "money":3000};
-    {"name":"sara" , "money":2000};
-    {"name":"alef" , "money":4500};
-    {"name":"zack" , "money":4000};
-]
-
-function clientPremium(Client)[
-    let bestClient=Client
-
-
-]
-
