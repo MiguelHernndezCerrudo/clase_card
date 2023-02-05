@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+</head>
+<body>
+    <h2>Agenda</h2>
+    <main>
+        <section>
+            <p>
+                <label>Name:</label>
+                <input type="text" name="name-client" id="name-client"/>
+            </p>
+            <p>
+                <label>Surnames:</label>
+                <input type="text" name="surnames-client" id="surnames-client"/>
+            </p>
+            <p>
+                <label>Phone:</label>
+                <input type="number" name="phone-client" id="phone-client"/>
+            </p>
+            <p>
+                <label>E-mail:</label>
+                <input type="email" name="email-client" id="email-client"/>
+            </p>
+            <p>
+                <input type="button" name="btn-add" id="btn-add" value="Add new client">
+            </p>
+            
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surnames</th>
+                        <th>Phone</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody id="client-rows">
+                    <tr>
+                        <td>Juan</td>
+                        <td>Cruz</td>
+                        <td>67578787</td>
+                        <td>juan@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <script>
+
+        let clients=[
+            {
+                "id":1,
+                "name":"David",
+                "surnames":"Gómez",
+                "phone":"678987345",
+                "email":"david@gmail.com"
+            },
+            {
+                "id":2,
+                "name":"Sara",
+                "surnames":"Gómez",
+                "phone":"678897645",
+                "email":"sara@gmail.com"
+            },
+            {
+                "id":3,
+                "name":"Gloria",
+                "surnames":"Venancia",
+                "phone":"678987490",
+                "email":"gloria@gmail.com"
+            },
+        ];
+        // esto hace llamada la id del tbody
+        const clientRows = document.querySelector('#client-rows');
+        const btnAdd = document.querySelector('#btn-add');
+
+        function renderClients(clientsList) {
+            clientRows.innerHTML="";//tbody
+            clients.forEach(cliente => {
+                clientRows.innerHTML+=`
+                    <tr>
+                        <td>${cliente.name}</td>
+                        <td>${cliente.surnames}</td>
+                        <td>${cliente.phone}</td>
+                        <td>${cliente.email}</td>
+                    </tr>
+                `
+            });
+            
+        }
+        // cliente es un objeto json
+        function addNewClient(cliente) {
+            clients.push(cliente);
+            renderClients(clients)
+        }
+
+        function init() {
+            renderClients(clients);
+            btnAdd.addEventListener('click', function () {
+                const phone=document.getElementById("phone-client").value;
+                // este const sirve para comprobar que el valor que se introuce es un numero
+                const phoneNumber = parseFloat(phone);
+                if (isNaN(phoneNumber)){
+                    alert("El telefono debe ser un numero");
+                    return false;
+                }
+                // comprobar si el email ya existe 
+                const email=document.getElementById("email-client").value;
+                if (clients.some(cliente=>cliente.email===email || cliente.phone===phone )){
+                    alert("El email o telefono ya existe");
+                    return false;
+
+                }
+
+                const client={
+                    "id":clients.length+1,
+                    "name":document.getElementById("name-client").value,
+                    "surnames":document.getElementById("surnames-client").value,
+                    "phone":phone,
+                    "email":email
+                    
+                }
+                addNewClient(client);
+            })
+        }
+        init();
+    </script>
+</body>
+</html>
