@@ -33,7 +33,7 @@ console.log("Nombr:", nombreCliente.indexOf("a"));
 function checkEmail(email){
 //si este caso ocurre
     if (email.indexOf('@')===-1) return false;
-//si este casi se da
+//si este caso se da
     if (email.indexOf('.') <= email.indexOf('@')) return false;
 //si lo anterior no ha sucedido
     return true;
@@ -75,20 +75,20 @@ console.log(notaAlumno(3));
 
 //la sigiente funcion sirve para calcular descuentos 
 function descuento(precio){
-    //si el precio es mayor que 10 y menor que 50 resta 5
-    if (precio > 10)  (precio < 50); {
-        return (precio - 5);
-    }
-    //si el precio es igual que 50 y menor que 100 resta 10
-    if (precio = 50)  (precio < 100 ); {
-        return (precio - 10);
-    }
-    //si el precio es mayor o igual que 100 descuento del 10%
-    if (precio >= 100) {
+     //si el precio es mayor o igual que 100 descuento del 10%
+     if (precio >= 100) {
         return (precio * 0.90);
     }
+     //si el precio es igual que 50 y menor que 100 resta 10
+     if (precio = 50)  (precio < 100 ); {
+        return (precio - 10);
+    }
+     //si el precio es mayor que 10 y menor que 50 resta 5
+     if (precio > 10)  (precio < 50); {
+        return (precio - 5);
+    }
 
-    else {
+     else {
         return (precio);
     }
 }
