@@ -1,4 +1,4 @@
-
+// esta funcion sirve para calcular medias
 function notaMedia(notasModulo){
     let total = 0 
     for ( let i = 0; i < notasModulo.length; i++){
@@ -107,7 +107,7 @@ function loteria(acierto){
 
 }
 
-// la siguiente funcion puede servir para hacer cambioos de valencias
+// la siguiente funcion puede servir para hacer cambios de valencias
 function romanos(deci){
     if (deci == 1) {
         return ('I')
