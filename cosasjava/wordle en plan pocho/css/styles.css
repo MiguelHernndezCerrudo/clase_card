@@ -1,0 +1,26 @@
+#grid-words{
+    display: grid;
+    grid-template-columns: repeat(5, 2rem);
+    grid-template-rows: repeat(5, 2rem);
+    gap: 5px;
+}
+#grid-words div{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+} 
+.form-user{
+    padding: 1rem 0;
+}
+
+.yellow-letter{
+    background-color: yellow;
+}
+.grey-letter{
+    background-color: grey;
+}
+.green-letter{
+    background-color: green;
+}
